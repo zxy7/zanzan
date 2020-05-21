@@ -1,0 +1,21 @@
+{
+  "name": "zanzan",
+  "description" : "目前只有分屏功能",
+  "version": "1.0",
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "hello.png"
+  },
+  "permissions": ["tabs", "system.display"],
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["http://www.google.com/*"],
+      "css": ["index.css"],
+      "js": [ "index.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "index.js"
+  ]
+}
