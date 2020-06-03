@@ -6,6 +6,11 @@
     "default_popup": "index.html",
     "default_icon": "hello.png"
   },
+  "icons": {
+    "16": "images/icons/icon16.png",
+    "48": "images/icons/icon48.png",
+    "128": "images/icons/icon128.png" 
+  },
   "permissions": ["tabs", "system.display"],
   "manifest_version": 2,
   "content_scripts": [
